@@ -2125,9 +2125,36 @@ body {
         scroll-behavior: smooth;
     }
 
+   /* responsive editing */
     .max-container {
         margin: 0px auto;
+        max-width: 600px;
     }
+
+    .contact-form .form-row {
+        width: 390px;
+    }
+
+    .contact-form input{
+        width: 370px;
+    } 
+    .contact-form textarea{
+        width: 96%;
+    }
+
+    .contact-form button{
+        margin-left: 130px;
+    }
+
+    .letter{
+        margin: 50px auto;
+    }
+
+    .letter .search{
+        width: 440px;
+    }
+
+    /* Ends here */
 
     .one .box-1 h1 {
         font-size: 29px;
