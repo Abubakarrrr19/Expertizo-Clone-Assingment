@@ -39,6 +39,8 @@ body {
 .max-navbar {
     max-width: 1380px;
     margin: 0 auto;
+    /* max-width: 1920px;
+    margin: 0px auto; */
     background-color: white;
 }
 
@@ -148,7 +150,6 @@ body {
 }
 
 .one .box-1 .cont-btn a {
-    margin-top: 40px;
     line-height: 0;
     padding: 12px 30px;
     color: #fff;
@@ -1033,18 +1034,7 @@ body {
         display: none;
     }
 
-    .footer-top .footer-cont {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
 
-    .center-box-2 {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
 
 }
 
@@ -1469,7 +1459,6 @@ body {
     line-height: 42px;
     font-weight: 700;
     color: #012970;
-    text-align: center;
 }
 
 .eight .eight-part {
@@ -1827,9 +1816,14 @@ body {
 
 .footer-top .footer-cont {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
+}
+
+.footer-top .footer-cont .center-box-2 {
+    display: flex;
 }
 
 .footer-top .footer-cont .footer-card-1 {
@@ -1989,19 +1983,24 @@ body {
     color: #8f95c3;
 }
 
-.center-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.center-box-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive Website starts below range(991px): */
@@ -2092,9 +2091,7 @@ body {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        justify-content: center;
         width: 70%;
-        align-items: center;
     }
 
     .nine-part .section-9-card {
@@ -2109,8 +2106,24 @@ body {
         max-width: 640px;
     }
 
+    .contact-form button {
+        margin: 0px 235px;
+    }
+
     .contact-form .form-row {
-        width: 500px;
+        width: 100%;
+    }
+
+    .footer-top .footer-cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+    .footer-top .footer-cont .center-box-2 {
+        display: flex;
     }
 }
 
@@ -2125,36 +2138,10 @@ body {
         scroll-behavior: smooth;
     }
 
-   /* responsive editing */
     .max-container {
         margin: 0px auto;
-        max-width: 600px;
+        width: 685px;
     }
-
-    .contact-form .form-row {
-        width: 390px;
-    }
-
-    .contact-form input{
-        width: 370px;
-    } 
-    .contact-form textarea{
-        width: 96%;
-    }
-
-    .contact-form button{
-        margin-left: 130px;
-    }
-
-    .letter{
-        margin: 50px auto;
-    }
-
-    .letter .search{
-        width: 440px;
-    }
-
-    /* Ends here */
 
     .one .box-1 h1 {
         font-size: 29px;
@@ -2168,8 +2155,11 @@ body {
         line-height: 1.2;
     }
 
-    .one .box-1 .cont-btn {
-        margin-left: 97px;
+    .one .box-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .one .box-2 {
@@ -2292,27 +2282,17 @@ body {
         height: 300px;
         width: 80%;
     }
+
+    .contact-form button {
+        margin: 0px 135px;
+    }
+
 }
 
 @media screen and (max-width:550px) {
 
-    .one .box-1 {
-        height: 40%;
-        width: 85%;
-        text-align: center;
-    }
-
-    .one .box-1 .cont-btn {
-        margin-left: 131px;
-    }
-
     .one .box-2 {
         width: 100%;
-    }
-
-    .two .box-1 {
-        width: 90%;
-        text-align: center;
     }
 
     .two .box-2 {
@@ -2320,39 +2300,74 @@ body {
     }
 
     .four .four-part {
-        width: 100%;
+        width: 90%;
+    }
+
+    .four .four-part .card-1 p {
+        font-size: 20px;
+    }
+
+    .four .four-part .card-2 p {
+        font-size: 20px;
+    }
+
+    .four .four-part .card-3 p {
+        font-size: 20px;
+    }
+
+    .four .four-part .card-4 p {
+        font-size: 20px;
+    }
+
+    .four .four-part .card-5 p {
+        font-size: 20px;
+    }
+
+    .four .four-part .card-6 p {
+        font-size: 20px;
+    }
+
+    .five {
+        margin-top: 40px;
     }
 
     .five .five-part .card-section-1 {
         width: 100%;
     }
 
+    .one .box-1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .one .box-1 h1 {
+        font-size: 47px;
+    }
+
+    .one .box-1 h2 {
+        font-size: 32px;
+    }
+
+    .one .box-1 .cont-btn {
+        height: 57px;
+    }
+
+    .one .box-1 .cont-btn a {
+        padding: 17px 30px;
+    }
+
+    .two .box-1 h2 {
+        font-size: 29px;
+    }
+
+    .two .box-1 p {
+        font-size: 21px;
+        line-height: 25px;
+    }
     .six .six-part .cards {
-        width: 100%;
+        width: 96%;
     }
-
-    .seven .seven-part .review {
-        width: 100%;
-    }
-
-    .seven .seven-part .review .pic {
-        left: 200px;
-    }
-
     .eight .eight-part .card-one {
-        width: 90%;
-    }
-
-    .eight .eight-part .card-one .logo {
-        height: 300px;
-        width: 100%;
-    }
-
-    .nine-part .section-9-card {
-        width: 100%;
-    }
-
-    .footer-top .footer-cont .footer-card-4 {
-        display: none;
+        width: 95%;
     }
 }
